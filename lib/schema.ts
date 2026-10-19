@@ -127,7 +127,7 @@ export const contextResearchSchema = z.object({
 
 /** Stage 2 (critique model, no web search): the judgement. */
 export const critiqueSchema = z.object({
-  study_type: z.string().describe("One plain-language line describing the design, e.g. 'Patients chose their own group'"),
+  study_type: z.string().describe("Short neutral phrase describing the design, shown after 'Study design:', e.g. 'patients picked their own group instead of being randomly assigned'"),
   tldr: z.object({
     findings: z.array(z.string()).min(1).max(4),
     implications: z.string(),

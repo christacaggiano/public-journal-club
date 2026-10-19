@@ -104,7 +104,7 @@ Showing your work on numbers:
 ${rubricPrompt()}
 
 Also write:
-- study_type: one plain-language line, e.g. "Patients chose their own group".
+- study_type: a short, neutral phrase describing the design, shown after the label "Study design:", e.g. "patients picked their own group instead of being randomly assigned" or "randomized trial in 400 adults". Describe, don't judge.
 - tldr: 2-3 short findings and 1-2 sentences on what it means, reflecting your critique.
 - would_you_act: one or two sentences.
 

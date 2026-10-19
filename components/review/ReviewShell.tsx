@@ -108,7 +108,7 @@ export function ReviewShell({ review }: { review: StoredReview }) {
               {review.paper.study_type ? (
                 <>
                   {" · "}
-                  <span className="font-medium text-concern">{review.paper.study_type}</span>
+                  <span className="font-medium text-ink">Study design:</span> {review.paper.study_type}
                 </>
               ) : null}
             </p>
