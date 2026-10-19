@@ -19,6 +19,16 @@ const PdfViewer = dynamic(() => import("./PdfViewer"), {
   loading: () => <div className="flex h-full items-center justify-center bg-reader text-muted">Loading the paper…</div>,
 });
 
+/** "First Author et al." when a paper has more than two authors. */
+function shortAuthors(authors: string | undefined): string | undefined {
+  if (!authors) return authors;
+  const names = authors
+    .split(/\s*(?:;|,|&|\band\b)\s*/)
+    .map((n) => n.trim())
+    .filter(Boolean);
+  return names.length > 2 ? `${names[0]} et al.` : authors;
+}
+
 export function ReviewShell({ review }: { review: StoredReview }) {
   const wide = useMediaQuery("(min-width: 900px)");
   const [tab, setTab] = useState<"paper" | "review">("review");
@@ -94,7 +104,15 @@ export function ReviewShell({ review }: { review: StoredReview }) {
     />
   );
 
-  const meta = [review.paper.authors, review.paper.journal, review.paper.year].filter(Boolean).join(" · ");
+  const meta = [shortAuthors(review.paper.authors), review.paper.journal, review.paper.year].filter(Boolean).join(" · ");
+  const fullMeta = [
+    review.paper.authors,
+    review.paper.journal,
+    review.paper.year,
+    review.paper.study_type ? `Study design: ${review.paper.study_type}` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
     <GlossaryProvider entries={review.glossary}>
@@ -102,8 +120,10 @@ export function ReviewShell({ review }: { review: StoredReview }) {
         <header className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line bg-surface px-4 py-2.5">
           <Brand />
           <div className="flex min-w-0 flex-[1_1_320px] flex-col">
-            <h1 className="line-clamp-2 font-display text-base leading-snug font-medium">{review.paper.title}</h1>
-            <p className="truncate text-[0.8rem] text-muted">
+            <h1 className="line-clamp-2 font-display text-base leading-snug font-medium" title={review.paper.title}>
+              {review.paper.title}
+            </h1>
+            <p className="truncate text-[0.8rem] text-muted" title={fullMeta}>
               {meta}
               {review.paper.study_type ? (
                 <>
