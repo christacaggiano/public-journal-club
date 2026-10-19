@@ -1,0 +1,524 @@
+{
+  "schema_version": "0.4",
+  "paper": {
+    "title": "Isometric Yoga-Like Maneuvers Improve Adolescent Idiopathic Scoliosis: A Nonrandomized Control Trial",
+    "authors": "Loren M. Fishman",
+    "journal": "Global Advances in Health and Medicine",
+    "year": 2021,
+    "doi": "10.1177/2164956120988259",
+    "study_type": "Patients chose their own group; no coin-flip assignment",
+    "pdf": "fishman-2021-isometric-yoga-like-maneuvers-improve-adolescent-idiopathic-scoliosis-a-nonrandomized-control-trial.pdf"
+  },
+  "tldr": {
+    "findings": [
+      "Teens with scoliosis who said they did a few yoga poses daily had straighter spines on their next X-ray.",
+      "Teens who said they skipped the poses had slightly more curved spines.",
+      "The study can't tell whether the poses caused the difference. Teens picked their own group, and more than half never came back for a follow-up X-ray."
+    ],
+    "implications": "The poses are cheap and unlikely to cause harm, so they are worth testing in a better study. This paper alone is not a reason to skip or delay a brace."
+  },
+  "summary": "Scoliosis is a sideways curve of the spine. It most often appears in the early teen years, and doctors don't know what causes it. Doctors measure it on an X-ray as an angle in degrees, called the Cobb angle. This paper comes from one doctor's clinic in Manhattan. The clinic taught teens with scoliosis one to three yoga poses, such as the side plank, meant to strengthen the muscles on the weaker side of the curve. Teens were asked to hold the poses once a day and then send in a new X-ray. Of 131 teens who joined, 56 sent one. The 41 who said they had done the poses were treated as the 'yoga group', and the 15 who said they hadn't became the comparison group. Radiologists who didn't know which group a teen was in measured the X-rays. In the lower spine, curves in the yoga group shrank by about 9 degrees on average, while the comparison group's curves grew by about 5 degrees. The paper also reports that teaching the poses over video calls worked less well than teaching them in person.",
+  "dimensions": [
+    {
+      "id": "journal",
+      "label": "Where it was published",
+      "question": "Does the size of the claim match the journal it appeared in?"
+    },
+    {
+      "id": "coi",
+      "label": "Conflicts of interest",
+      "question": "Could the author benefit from a particular result?"
+    },
+    {
+      "id": "sample",
+      "label": "Who was studied",
+      "question": "How many people were studied, and were they chosen well?"
+    },
+    {
+      "id": "design",
+      "label": "How the study was set up",
+      "question": "Was the study set up to answer its question fairly?"
+    },
+    {
+      "id": "stats",
+      "label": "The math",
+      "question": "Were the numbers analysed correctly?"
+    },
+    {
+      "id": "figures",
+      "label": "Do the results back the claims?",
+      "question": "Do the tables and numbers support what the author says?"
+    },
+    {
+      "id": "value",
+      "label": "Should it change what you do?",
+      "question": "Would you make a health decision based on this paper?"
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h-claim",
+      "dimension": "journal",
+      "verdict": "concern",
+      "page": 1,
+      "quote": "These yoga poses show promise for reversing adolescent idiopathic scoliosis",
+      "title": "A big claim in a small journal",
+      "explanation": "A few minutes of daily yoga that reverses scoliosis would change how doctors treat it. Results that big usually go to the most widely read medical journals, where they get the toughest review. This paper is in a small journal focused on complementary and alternative medicine. One rough measure of a journal's reach is its impact factor. This journal's was about 1.8 in 2021. Leading general medical journals score above 50. A low score doesn't make a paper wrong. But when a claim is this large and the venue this small, the methods deserve a careful look."
+    },
+    {
+      "id": "h-coi",
+      "dimension": "coi",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.",
+      "title": "No conflicts declared, but the author promotes this method",
+      "explanation": "The author co-edited a 2011 book called Yoga and Scoliosis and appears in a paid online course called Yoga for Scoliosis. Neither is mentioned in the paper. That doesn't mean the results are false, and journals differ on what authors must disclose. But readers should know the author has a professional and financial stake in this method working. He was also the only author. His clinic recruited, treated and followed every patient, and he analysed the data himself. No one independent of the method checked the work."
+    },
+    {
+      "id": "h-blind",
+      "dimension": "design",
+      "verdict": "strength",
+      "page": 2,
+      "quote": "We studied Cobb angles of serial X-rays read by blinded radiologists",
+      "title": "X-ray readers didn't know who did yoga",
+      "explanation": "This is a real strength. The radiologists who measured the curves didn't know which group each teen was in, so their expectations couldn't sway the measurements. But it doesn't fix the bigger problems: who ended up in each group, and who sent back an X-ray at all. Two people measuring the same X-ray can also disagree by about 5 degrees, and some before-and-after X-rays were taken at different places."
+    },
+    {
+      "id": "h-history",
+      "dimension": "design",
+      "verdict": "missing",
+      "page": 2,
+      "quote": "against the backdrop of the predicted natural history",
+      "title": "A promised comparison that never appears",
+      "explanation": "The paper says results were compared with how scoliosis normally changes without treatment. No such comparison appears in the results. It matters because curves mostly worsen during growth spurts. On average, these teens were well along in growth, and many would have been close to done. For teens at that stage, smaller curves often stop getting worse on their own."
+    },
+    {
+      "id": "h-controls",
+      "dimension": "design",
+      "verdict": "concern",
+      "page": 3,
+      "quote": "Control patients were also taught the appropriate poses. They were simply the people that did not do the poses",
+      "title": "The comparison group is the teens who chose not to do yoga",
+      "explanation": "This is the most important problem in the paper. Every teen was offered the poses. The comparison group is simply the teens who didn't do them. Teens who keep up a daily routine are often different in other ways too: more motivated, more family support, more likely to wear a brace as told or see a physical therapist. Any of those could explain better results. Researchers handle this with a randomized trial, where chance decides who gets the treatment so the groups start out alike. This study didn't do that, so the yoga group's better results can't be credited to yoga."
+    },
+    {
+      "id": "h-nobias",
+      "dimension": "design",
+      "verdict": "concern",
+      "page": 3,
+      "quote": "No effort was made to reduce any bias that might have influenced their decision-process",
+      "title": "Bias acknowledged but not addressed",
+      "explanation": "The paper says plainly that nothing was done about the factors that drove who did the poses. It also didn't record the information a reader would need to check. We don't know which teens wore braces, saw a physical therapist, or played sports, and any of these can change a curve. Bracing matters most here. It is the standard treatment for curves between 25 and 45 degrees, which describes many of these teens."
+    },
+    {
+      "id": "h-retro",
+      "dimension": "design",
+      "verdict": "strength",
+      "page": 6,
+      "quote": "Indeed, treatment and control groups were defined retroactively based on self-report of compliance at follow-up.",
+      "title": "The author names the key weakness",
+      "explanation": "Credit to the author for saying this openly. It confirms that the groups were decided at the end of the study, from one question about whether teens did the poses. That creates another risk. A teen whose curve improved may be more likely to remember, or say, that they did the poses. That would make yoga look better even with unbiased X-ray readers."
+    },
+    {
+      "id": "h-attrition",
+      "dimension": "sample",
+      "verdict": "concern",
+      "page": 3,
+      "quote": "Seventy-five were lost to follow-up either because they did not get subsequent X-rays or because they did not respond to repeated telephone calls and emails.",
+      "title": "More than half the teens disappeared from the study",
+      "explanation": "75 of the 131 teens who joined (57%) never sent a second X-ray, so the results rest on the 56 who did. Losing this many people can create a result on its own. Families who saw progress, or who liked the clinic, may have been more likely to send an X-ray. The paper never compares the teens who left with those who stayed, so we can't check this."
+    },
+    {
+      "id": "h-size",
+      "dimension": "sample",
+      "verdict": "caution",
+      "page": 3,
+      "quote": "41 did the side-plank, the half-moon and elevated side plank poses as appropriate (treatment group) and 15 did not (controls)",
+      "title": "Small, uneven groups from one clinic",
+      "explanation": "The comparison group is very small: 13 teens for lower-back curves and only 6 for upper-back curves. With groups this small, a few unusual patients can swing the averages. Everyone came from one clinic known for yoga-based treatment, so these families may not be typical. Patients up to age 21 could join, and the gap between X-rays ranged from 3 months to 2.5 years. That mixes teens at very different stages of growth, who did the poses for very different lengths of time."
+    },
+    {
+      "id": "h-power",
+      "dimension": "stats",
+      "verdict": "caution",
+      "page": 3,
+      "quote": "Our previous work15 reached significance at 26 patients",
+      "title": "Study size based on an earlier study with no comparison group",
+      "explanation": "Before a study, researchers estimate how many people they need, based on how big they expect the effect to be. Here that guess came from the author's own earlier report of 25 patients, which had no comparison group at all. Effects in small early studies without comparison groups usually turn out to be overestimates. Planning around them makes a study look big enough on paper when it isn't."
+    },
+    {
+      "id": "h-paired",
+      "dimension": "stats",
+      "verdict": "concern",
+      "page": 5,
+      "quote": "For both groups, paired t-tests indicated statistical significance",
+      "title": "Each group was tested alone instead of compared with the other",
+      "explanation": "The real question is whether the yoga group improved more than the comparison group. Answering it means comparing the two groups' changes directly. Ideally the comparison would also account for differences in starting curve, growth stage and time between X-rays. Instead, the paper checks whether each group changed compared with its own starting point. Two groups each changing 'significantly' doesn't show the difference between them is real. None of the analyses account for any of those other differences."
+    },
+    {
+      "id": "h-baseline",
+      "dimension": "stats",
+      "verdict": "concern",
+      "page": 5,
+      "quote": "thoracic Cobb angles differed significantly with the treatment group having higher (i.e. more severe) scores",
+      "title": "The groups started out very different",
+      "explanation": "In the upper back, the yoga group started with much bigger curves (about 40 degrees) than the 6 teens in the comparison group (about 18 degrees). This matters because of a statistical effect called regression to the mean. When people's measurements start out unusually high, their next measurement tends to be lower by chance alone. Since X-ray measurements can vary by about 5 degrees, some of the 'improvement' in bigger curves may be this effect. The analysis doesn't adjust for it."
+    },
+    {
+      "id": "h-df",
+      "dimension": "stats",
+      "verdict": "concern",
+      "page": 5,
+      "quote": "t = 3.3, df = 21, P = .022 for the treatment group",
+      "title": "Some reported numbers don't add up",
+      "explanation": "This test result is reported for a group of 17 teens, but the numbers listed fit a group of about 22. Redoing the calculation from the reported test value gives a p-value of 0.003, not the 0.022 printed in the paper. Elsewhere the paper reports 'P = .000', which isn't possible because a p-value is never exactly zero. These slips don't flip the direction of the result. They do suggest no one double-checked the analysis, which lowers confidence in the other numbers.",
+      "check": {
+        "reported": "t = 3.3, df = 21, P = .022 for the thoracic treatment group (17 patients)",
+        "inputs": "t = 3.3 and the group size of 17 from Table 3 and the Results",
+        "method": "Two-sided p-value from a t statistic. A paired test on 17 patients has 16 degrees of freedom; 21 would mean 22 patients.",
+        "recomputed": "p = 0.0034 with 21 degrees of freedom, or 0.0045 with 16. Neither matches the reported 0.022.",
+        "computed_with_code": true
+      }
+    },
+    {
+      "id": "h-rate",
+      "dimension": "stats",
+      "verdict": "concern",
+      "page": 5,
+      "quote": "They lost 2.73 degrees (s.d. 2.86) over that period or 0.28 degrees/month or 0.07%/month.",
+      "title": "The monthly rates don't match the paper's own numbers",
+      "explanation": "We recomputed these rates from figures given in the same paragraph. The comparison group worsened by about 0.8% per month, not 0.07%. The in-person yoga group improved by 1.4 degrees (3.9%) per month, not 1.6 degrees (5.5%). The video-call group improved by about 2.2% per month, not 3.3%. Every error makes yoga look better compared with no yoga. These figures also come from a subgroup (teens with less than a year between X-rays) chosen after the results were in. In that subgroup, the comparison teens were older and waited longer between X-rays.",
+      "check": {
+        "reported": "Comparison group lost 0.07% per month; in-person yoga group gained 1.6 degrees (5.5%) per month; video group gained 3.3% per month",
+        "inputs": "Comparison: 2.73 degrees over 9.7 months on a 35.2-degree curve. In-person: 10.9 degrees over 7.7 months on 36.5 degrees. Video: 8.5 degrees over 11.8 months on 33.5 degrees.",
+        "method": "Change divided by months, and change as a percentage of the starting curve divided by months",
+        "recomputed": "Comparison 0.80% per month. In-person 1.42 degrees (3.88%) per month. Video 0.72 degrees (2.15%) per month.",
+        "computed_with_code": true
+      }
+    },
+    {
+      "id": "h-tele",
+      "dimension": "stats",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "Non-compliance was significantly higher in the telemedical group (11 of 30 vs. 6 of 30)",
+      "title": "Called 'significant' without being tested, and it isn't",
+      "explanation": "The paper gives no test for this claim. When we ran the standard tests ourselves, the gap between 11 of 30 and 6 of 30 was well within what chance alone could produce (p = 0.15 and p = 0.25). The paper's own summary also gives different numbers (9 versus 6). And teens chose video or in-person visits based on convenience, so even a real difference wouldn't show that the format caused it.",
+      "check": {
+        "reported": "Non-compliance 'significantly higher' with video visits: 11 of 30 vs 6 of 30 (no test reported)",
+        "inputs": "11 of 30 vs 6 of 30",
+        "method": "Chi-square test without continuity correction, and Fisher's exact test, on the 2 by 2 table",
+        "recomputed": "Chi-square p = 0.15; Fisher's exact p = 0.25. Not statistically significant.",
+        "computed_with_code": true
+      }
+    },
+    {
+      "id": "h-category",
+      "dimension": "figures",
+      "verdict": "caution",
+      "page": 5,
+      "quote": "In the treatment group 20 (49%) of lumbar and thoracolumbar x-ray pairs showed clinically significant improvement",
+      "title": "'Meaningful improvement' could mean a very small change",
+      "explanation": "Here, 'clinically significant improvement' means a curve moved from one severity band to a lower one, such as from 25 to 44 degrees down to under 25. A curve at 26 degrees that measures 24 next time would count, even though 2 degrees is smaller than normal measurement error. Specialists usually treat 5 degrees or more as a real change. The paper should have reported how many teens in each group changed by at least 5 degrees."
+    },
+    {
+      "id": "h-strongly",
+      "dimension": "figures",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "These observational data strongly suggest that simple yoga and yoga-like poses applied to thoracic and lumbar AIS curves can be effective in reducing curve magnitude.",
+      "title": "Stronger wording than the evidence supports",
+      "explanation": "'Observational' means the researchers watched what people chose to do rather than assigning treatments. That kind of data can hint at a cause, but can't prove one. Teens picked their own groups, most dropped out, and several numbers contain errors. Yoga could have helped, but the results fit just as well with the other explanations above. 'Strongly suggest' goes further than the data can."
+    },
+    {
+      "id": "h-replication",
+      "dimension": "figures",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "The vicissitudes of randomization had unfortunately produced a study group containing no patients relevant to evaluating this method.",
+      "title": "A study that found no effect is dismissed",
+      "explanation": "In 2019, a team at Children's Hospital Los Angeles tested the side plank in a randomized trial, where chance decided who did it. After 6 months, curves hadn't changed in either group. That study had its own problems. Only 22 of 64 teens kept up the exercises, and the author argues that few of its patients had the lower-back curves the side plank is meant for. But this paper dismisses it in one sentence while relying on weaker evidence of its own. When an author criticizes another study, read that study before accepting the criticism."
+    },
+    {
+      "id": "h-early",
+      "dimension": "value",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "can be initiated on young people with curves of 6 or 8 degrees",
+      "title": "Suggests treating curves too small to count as scoliosis",
+      "explanation": "Scoliosis is diagnosed at 10 degrees, and most smaller curves never get worse. This paper has no data on curves under 10 degrees. Treating them would mean more X-rays and more worry for families of healthy kids, based on evidence that hasn't shown the poses work even for larger curves."
+    },
+    {
+      "id": "h-bracing",
+      "dimension": "value",
+      "verdict": "concern",
+      "page": 6,
+      "quote": "Bracing and surgery may",
+      "title": "The real risk is choosing yoga instead of a brace",
+      "explanation": "The poses themselves are very unlikely to cause harm. The risk comes if a family uses this paper as a reason to skip or delay a brace for a curve that's getting worse. A large 2013 study, in which chance decided which teens got braces, found that bracing kept many more high-risk curves from reaching the size where surgery is usually recommended. Adding the poses on top of a doctor's plan costs little. Swapping them in for that plan isn't supported by this paper."
+    },
+    {
+      "id": "h-next",
+      "dimension": "value",
+      "verdict": "strength",
+      "page": 6,
+      "quote": "A larger study with randomized control group is clearly preferable",
+      "title": "Best read as a reason to run a better study",
+      "explanation": "On this point the author is right. The poses are cheap and safe, the idea behind them is reasonable, and the reported changes are big enough to be worth testing properly. A good follow-up study would let chance decide who does the poses and track how often people actually do them. It would record braces and other treatments, follow everyone who joins, and compare the groups directly."
+    }
+  ],
+  "missing": [
+    {
+      "dimension": "design",
+      "title": "Braces and other treatments aren't recorded",
+      "explanation": "The paper never says how many teens wore braces or saw a physical therapist during the study. Both affect curve size, and teens who keep up daily exercises may also be more likely to wear their brace."
+    },
+    {
+      "dimension": "sample",
+      "title": "No information on the teens who dropped out",
+      "explanation": "There's no comparison of the 75 teens who left with the 56 who stayed. Without it, there's no way to tell whether the dropouts changed the result."
+    },
+    {
+      "dimension": "stats",
+      "title": "No direct estimate of how much yoga helped",
+      "explanation": "The paper never reports the single number readers most need: how much more the yoga group improved than the comparison group, with a range showing how certain that estimate is."
+    }
+  ],
+  "barometers": [
+    {
+      "id": "rigor",
+      "label": "Study quality",
+      "score": 1.5,
+      "max": 5,
+      "higher_is": "better",
+      "rating": "Low",
+      "ends": [
+        "Very low",
+        "High"
+      ],
+      "rationale": "Judged against a well-run observational study: the groups weren't comparable at the start (teens chose them), other explanations such as bracing weren't measured or adjusted for, and 57% of teens were lost to follow-up. Unbiased X-ray reading is the main strength."
+    },
+    {
+      "id": "bias",
+      "label": "Risk of slanted reporting",
+      "score": 4,
+      "max": 5,
+      "higher_is": "worse",
+      "rating": "High",
+      "ends": [
+        "Low",
+        "Very high"
+      ],
+      "rationale": "The author has an undeclared professional and financial stake in the method (a book and a paid course). The conclusions go further than the data ('strongly suggest'), a randomized trial that found no effect is dismissed in one sentence, and the arithmetic errors all make yoga look better."
+    },
+    {
+      "id": "effect",
+      "label": "Evidence for the main claim",
+      "score": 1.5,
+      "max": 5,
+      "higher_is": "better",
+      "rating": "Weak",
+      "ends": [
+        "None",
+        "Strong"
+      ],
+      "cap": 3,
+      "rationale": "An observational study can score at most 3 for a cause-and-effect claim. This one is lowered further because teens chose their own groups, most dropped out, the groups were never compared directly, and an earlier randomized trial found no effect."
+    },
+    {
+      "id": "value",
+      "label": "Usefulness",
+      "score": 2,
+      "max": 5,
+      "higher_is": "better",
+      "rating": "Worth testing further",
+      "ends": [
+        "None",
+        "Practice-changing"
+      ],
+      "rationale": "Not enough to change care on its own. Useful as a reason to test a cheap, low-risk idea in a well-designed trial."
+    }
+  ],
+  "would_you_act": "Adding a few minutes of side planks to the plan your doctor recommends costs little and is unlikely to hurt. Using this paper as a reason to skip or delay a recommended brace is a risk the evidence doesn't justify.",
+  "context": {
+    "fit": "Mostly out of step",
+    "summary": "Researchers have studied exercise for scoliosis for decades. The best-designed studies, where chance decides who exercises, find that structured scoliosis exercise programs can help a little. The typical benefit is 3 to 5 degrees, mostly when exercise is added to standard care such as bracing. This paper reports a gain about twice that size, from just a few minutes of daily poses and a weaker study design. The only randomized test of the side plank found no change. So the idea that exercise might help somewhat fits the wider research. The claim that yoga poses can reverse scoliosis does not. Bracing remains the treatment with the strongest evidence for teens whose curves are likely to get worse.",
+    "comparisons": [
+      {
+        "relation": "agrees",
+        "kind": "Earlier study by the same author, no comparison group",
+        "title": "Side plank for scoliosis, 25 patients",
+        "finding": "Curves shrank by about a third in patients who did the side plank daily. With no comparison group, it can't separate the effect of the pose from other causes.",
+        "citation": "Fishman, Groessl & Sherman, Global Advances in Health and Medicine, 2014",
+        "url": "https://doi.org/10.7453/gahmj.2013.064"
+      },
+      {
+        "relation": "disagrees",
+        "kind": "Randomized trial",
+        "title": "Side plank vs. front plank, Children's Hospital Los Angeles",
+        "finding": "64 teens were randomly assigned. After 6 months, curves hadn't changed in either group (side plank group: 32 to 31 degrees). Only 22 teens kept up the exercises, so the groups analysed were small.",
+        "citation": "Sarkisova et al., Global Advances in Health and Medicine, 2019",
+        "url": "https://doi.org/10.1177/2164956119887720"
+      },
+      {
+        "relation": "context",
+        "kind": "Author's response letter",
+        "title": "The author's critique of the 2019 trial",
+        "finding": "Argues that the 2019 trial's side plank group had few lower-back curves, the type the side plank targets. Worth reading next to the trial itself.",
+        "citation": "Fishman, Global Advances in Health and Medicine, 2021",
+        "url": "https://doi.org/10.1177/21649561211019372"
+      },
+      {
+        "relation": "partly",
+        "kind": "Randomized trial",
+        "title": "Schroth exercises added to standard care, 50 teens",
+        "finding": "Teens randomly assigned to 6 months of daily Schroth exercises (a scoliosis-specific program) plus standard care had curves about 3.5 degrees smaller than teens who got standard care alone. That supports exercise helping, but the effect was much smaller than this paper reports.",
+        "citation": "Schreiber et al., PLOS ONE, 2016",
+        "url": "https://doi.org/10.1371/journal.pone.0168746"
+      },
+      {
+        "relation": "partly",
+        "kind": "Randomized trial",
+        "title": "Self-correction exercises for mild curves, 110 teens",
+        "finding": "Teens with mild curves (under 25 degrees) randomly assigned to a posture self-correction program improved by more than 5 degrees, while the group doing general exercises stayed stable.",
+        "citation": "Monticone et al., European Spine Journal, 2014",
+        "url": "https://doi.org/10.1007/s00586-014-3241-y"
+      },
+      {
+        "relation": "partly",
+        "kind": "Pooled analysis of 16 studies",
+        "title": "How much do scoliosis exercises help on average?",
+        "finding": "Across 16 studies, scoliosis-specific exercise improved curves by about 4.5 degrees on average. The authors note this is under the 5 degrees usually treated as a meaningful change.",
+        "citation": "Sun et al., BMC Musculoskeletal Disorders, 2025",
+        "url": "https://doi.org/10.1186/s12891-025-09309-0"
+      },
+      {
+        "relation": "partly",
+        "kind": "Pooled analysis of 14 studies",
+        "title": "Exercises added to bracing",
+        "finding": "Adding Schroth exercises to a brace improved curves by about 4 degrees on average, but the evidence was rated very low certainty. The authors say exercises should be added to bracing, not used instead of it.",
+        "citation": "Yang et al., Frontiers in Sports and Active Living, 2026",
+        "url": "https://doi.org/10.3389/fspor.2026.1919698"
+      },
+      {
+        "relation": "context",
+        "kind": "Review of the evidence (Cochrane)",
+        "title": "Exercises for teen scoliosis",
+        "finding": "A careful review of the evidence up to 2011 found too little high-quality evidence to recommend scoliosis exercises. More trials have been published since.",
+        "citation": "Romano et al., Cochrane Database of Systematic Reviews, 2012",
+        "url": "https://doi.org/10.1002/14651858.CD007837.pub2"
+      },
+      {
+        "relation": "context",
+        "kind": "Large randomized trial",
+        "title": "Does bracing work? (BrAIST)",
+        "finding": "In a large multi-hospital trial, 72% of braced teens finished growing without their curve reaching the size where surgery is usually recommended, compared with 48% of teens who were only monitored. The trial was stopped early because bracing worked. It is the main evidence behind today's standard care.",
+        "citation": "Weinstein et al., New England Journal of Medicine, 2013",
+        "url": "https://doi.org/10.1056/NEJMoa1307337"
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Scoliosis in children and teens (NIH)",
+        "why": "A plain-language overview of scoliosis, how it's monitored, and treatment options, from the US National Institutes of Health.",
+        "url": "https://www.niams.nih.gov/index.php/health-topics/scoliosis/more-info"
+      },
+      {
+        "title": "Effects of bracing in adolescents with idiopathic scoliosis (free full text)",
+        "why": "The bracing trial that shapes current care. The introduction and figures are readable without a medical background.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3913566/"
+      },
+      {
+        "title": "Side plank pose exercises for adolescent idiopathic scoliosis (free full text)",
+        "why": "The randomized test of the same pose. Read it alongside this paper and the author's reply.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6831967/"
+      },
+      {
+        "title": "2016 SOSORT guidelines on conservative treatment (free full text)",
+        "why": "Recommendations from an international society of scoliosis specialists on bracing and exercise, with the strength of evidence for each.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5795289/"
+      }
+    ]
+  },
+  "glossary": [
+    {
+      "term": "Cobb angle",
+      "definition": "The standard way to measure scoliosis on an X-ray: the angle, in degrees, between the most tilted bones at each end of the curve. A curve of 10 degrees or more counts as scoliosis."
+    },
+    {
+      "term": "scoliosis",
+      "definition": "A sideways curve of the spine. The most common kind starts in the early teen years and has no known cause."
+    },
+    {
+      "term": "randomized trial",
+      "definition": "A study where chance, like a coin flip, decides who gets a treatment. This makes the groups alike in every other way, so differences in results can be credited to the treatment."
+    },
+    {
+      "term": "comparison group",
+      "definition": "The people in a study who don't get the treatment, so researchers can see what happens without it. Also called a control group."
+    },
+    {
+      "term": "brace",
+      "definition": "A firm shell worn around the torso, often for 18 or more hours a day, to keep a curve from getting worse while a teen is still growing."
+    },
+    {
+      "term": "p-value",
+      "definition": "A number estimating how surprising a result would be if the treatment did nothing. Smaller means more surprising. Below 0.05 is the usual cut-off for 'statistically significant'. That label doesn't mean an effect is large, important or certain."
+    },
+    {
+      "term": "impact factor",
+      "definition": "How often a journal's recent papers are cited by other researchers, on average. It measures a journal's reach, not whether any one paper is right."
+    },
+    {
+      "term": "regression to the mean",
+      "definition": "When people are picked because a measurement is unusually high, their next measurement tends to be lower by chance alone, even with no treatment."
+    },
+    {
+      "term": "observational",
+      "definition": "A study that watches what people choose to do rather than assigning a treatment. It can hint at causes but can't prove them."
+    },
+    {
+      "term": "bias",
+      "definition": "Anything in how a study is run or analysed that pushes results away from the truth in a consistent direction."
+    },
+    {
+      "term": "pooled analysis",
+      "definition": "A study that combines the results of many earlier studies to get a more reliable overall answer. Researchers call this a meta-analysis."
+    },
+    {
+      "term": "statistically significant",
+      "definition": "A result unlikely to be due to chance alone, by a standard cut-off (usually a p-value under 0.05). It doesn't mean the effect is large or important."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yoga and Scoliosis (Springer Publishing, 2011), eds. Fishman and Iyengar",
+      "url": "https://www.springerpub.com/medicine/yoga-and-scoliosis-9781936303021.html"
+    },
+    {
+      "title": "Yoga for Scoliosis online course with Loren Fishman (YogaU)",
+      "url": "https://yogauonline.com/?p=26839"
+    },
+    {
+      "title": "Global Advances in Health and Medicine impact factor history",
+      "url": "https://www.scijournal.org/global-advances-in-health-medicine"
+    }
+  ],
+  "rubric_version": "1",
+  "classification": {
+    "evidence_type": "observational",
+    "claim_type": "causal",
+    "population": "humans",
+    "main_claim": "Holding a few yoga poses each day can shrink, and even reverse, the spinal curve in teens with scoliosis.",
+    "overreach": true,
+    "overreach_note": "Saying the poses reverse scoliosis is a cause-and-effect claim, but teens chose their own groups, so this design can only show a link.",
+    "cap": 3
+  },
+  "publication_status": {
+    "status": "peer_reviewed",
+    "doi": "10.1177/2164956120988259",
+    "notices": [],
+    "checked_at": "2026-10-19T19:40:00Z",
+    "source": "crossref"
+  }
+}

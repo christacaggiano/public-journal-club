@@ -1,0 +1,50 @@
+{
+  "name": "public-journal-club",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "node scripts/copy-pdf-worker.mjs",
+    "docs": "node scripts/build-methods-doc.mjs",
+    "docs:check": "node scripts/build-methods-doc.mjs && git diff --exit-code -- docs/METHODS.md"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.131.0",
+    "@fontsource/ibm-plex-mono": "5.2.7",
+    "@fontsource/ibm-plex-sans": "5.2.8",
+    "@fontsource/spectral": "5.2.8",
+    "@radix-ui/react-popover": "1.1.15",
+    "@upstash/ratelimit": "2.0.6",
+    "@upstash/redis": "1.35.4",
+    "@vercel/blob": "2.7.0",
+    "clsx": "2.1.1",
+    "lucide-react": "0.544.0",
+    "next": "16.3.8",
+    "next-themes": "0.4.6",
+    "pdfjs-dist": "5.4.296",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-dropzone": "14.3.8",
+    "react-pdf": "10.4.1",
+    "react-resizable-panels": "3.0.6",
+    "server-only": "^0.0.1",
+    "sonner": "2.0.7",
+    "unpdf": "1.8.1",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.18.8",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "license": "MIT"
+}
