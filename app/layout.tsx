@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: { default: "Public Journal Club", template: "%s · Public Journal Club" },
   description:
     "Upload a scientific paper and get a plain-language review: what it found, how much to trust it, and how it fits with other research.",
+  robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false, noimageindex: true } },
 };
 
 export const viewport: Viewport = {
