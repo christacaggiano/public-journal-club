@@ -152,6 +152,7 @@ export async function POST(request: Request) {
       emit({ type: "done", id });
     } catch (error) {
       const message = error instanceof Error ? error.message : "Something went wrong while writing the review.";
+      console.error(`[review ${id}] failed:`, error);
       await markFailed(id, friendlyError(message)).catch(() => undefined);
       emit({ type: "error", message: friendlyError(message) });
     } finally {

@@ -123,6 +123,27 @@ type CallOptions<S extends z.ZodType> = {
 };
 
 
+/** Replaces any string that holds a JSON object or array with the parsed value, at any depth. */
+export function decodeJsonStrings(value: unknown): unknown {
+  if (typeof value === "string") {
+    const t = value.trim();
+    if ((t.startsWith("{") && t.endsWith("}")) || (t.startsWith("[") && t.endsWith("]"))) {
+      try {
+        const parsed: unknown = JSON.parse(t);
+        if (parsed && typeof parsed === "object") return decodeJsonStrings(parsed);
+      } catch {
+        // Not JSON; keep the string.
+      }
+    }
+    return value;
+  }
+  if (Array.isArray(value)) return value.map(decodeJsonStrings);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, decodeJsonStrings(v)]));
+  }
+  return value;
+}
+
 /**
  * Runs one model until it calls the named tool with input that passes the schema.
  * Handles paused server-side tool loops, a model that stops without calling the tool,
@@ -179,7 +200,15 @@ async function callForTool<S extends z.ZodType>(opts: CallOptions<S>): Promise<z
 
     const call = message.content.find((b): b is Anthropic.Messages.ToolUseBlock => b.type === "tool_use" && b.name === toolName);
     if (call) {
-      const parsed = schema.safeParse(call.input);
+      let parsed = schema.safeParse(call.input);
+      if (!parsed.success) {
+        // Models sometimes send a nested object as a JSON-encoded string. Decode those and retry.
+        const repaired = schema.safeParse(decodeJsonStrings(call.input));
+        if (repaired.success) return repaired.data;
+        const issue = parsed.error.issues[0];
+        console.warn(`[${toolName}] invalid tool input (attempt ${fixAttempts + 1}): ${issue?.path.join(".") || "root"}: ${issue?.message}`);
+        parsed = repaired;
+      }
       if (parsed.success) return parsed.data;
       if (fixAttempts >= 1) {
         const issue = parsed.error.issues[0];
