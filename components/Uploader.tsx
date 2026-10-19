@@ -26,6 +26,8 @@ type Phase =
   | { kind: "working"; fileName: string }
   | { kind: "error"; message: string };
 
+const UPLOAD_TIMEOUT_MS = 2 * 60 * 1000;
+
 export function Uploader({ useBlob, blobAccess, maxMb }: { useBlob: boolean; blobAccess: "public" | "private"; maxMb: number }) {
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ kind: "idle" });
@@ -98,13 +100,30 @@ export function Uploader({ useBlob, blobAccess, maxMb }: { useBlob: boolean; blo
         let response: Response;
         if (useBlob) {
           const safeName = file.name.replace(/[^a-zA-Z0-9._-]+/g, "-").slice(-80) || "paper.pdf";
-          const blob = await upload(`uploads/${safeName.toLowerCase().endsWith(".pdf") ? safeName : `${safeName}.pdf`}`, file, {
-            access: blobAccess,
-            handleUploadUrl: "/api/upload",
-            contentType: "application/pdf",
-            multipart: file.size > 5 * 1024 * 1024,
-            onUploadProgress: ({ percentage }) => setUploadPct(Math.round(percentage)),
-          });
+          // A rejected upload shows up in the browser as a network error, which the Blob client
+          // retries for minutes. Give up after a while and say so instead of sitting at 97%.
+          const abort = new AbortController();
+          const timer = window.setTimeout(() => abort.abort(), UPLOAD_TIMEOUT_MS);
+          let blob: { url: string };
+          try {
+            blob = await upload(`uploads/${safeName.toLowerCase().endsWith(".pdf") ? safeName : `${safeName}.pdf`}`, file, {
+              access: blobAccess,
+              handleUploadUrl: "/api/upload",
+              contentType: "application/pdf",
+              multipart: file.size > 5 * 1024 * 1024,
+              abortSignal: abort.signal,
+              onUploadProgress: ({ percentage }) => setUploadPct(Math.round(percentage)),
+            });
+          } catch (error) {
+            console.error("Blob upload failed", error);
+            throw new Error(
+              abort.signal.aborted || (error as Error).name === "BlobServiceNotAvailable"
+                ? "The paper couldn't be uploaded to storage. Please try again in a moment."
+                : (error as Error).message || "The paper couldn't be uploaded.",
+            );
+          } finally {
+            window.clearTimeout(timer);
+          }
           setUploadPct(100);
           response = await fetch("/api/review", {
             method: "POST",
