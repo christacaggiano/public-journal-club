@@ -8,6 +8,8 @@ Built with Next.js 16 (App Router), React 19, Tailwind CSS 4, react-pdf, the Cla
 
 **For scientists checking our work:** the full rating method, with the appraisal tools it draws on and references, is in [`docs/METHODS.md`](docs/METHODS.md). The same information is on the site at `/methods`.
 
+**Trying it out:** [`samples/`](samples/) has two papers at opposite ends of the evidence scale, a randomized trial and a single-patient case report, with notes on what to compare in their reviews.
+
 ## How it works
 
 1. **Upload.** On Vercel, the browser uploads the PDF directly to Vercel Blob, which avoids the 4.5 MB request limit on functions. Locally, the PDF is posted to the API.
